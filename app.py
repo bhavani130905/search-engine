@@ -185,3 +185,4 @@ if __name__ == "__main__":
 
 
 # Routes: / for search, /documents for document viewer
+# Search engine completed and tested
