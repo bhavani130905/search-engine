@@ -92,3 +92,4 @@ Then open your browser and go to: **http://127.0.0.1:5000**
 |-------|--------|-------------|
 | `/` | GET, POST | Main search interface |
 | `/documents` | GET | View all documents in the collection |
+> Project completed and tested successfully.
