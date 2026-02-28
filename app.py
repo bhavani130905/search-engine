@@ -182,3 +182,6 @@ def view_documents():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+# Routes: / for search, /documents for document viewer
