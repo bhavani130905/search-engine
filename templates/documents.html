@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents — IR Search Engine</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #0f1117; color: #e2e8f0; min-height: 100vh; }
+        header { background: linear-gradient(135deg, #1a1f2e 0%, #16213e 100%); border-bottom: 1px solid #2d3748; padding: 20px 40px; display: flex; align-items: center; justify-content: space-between; }
+        header h1 { font-size: 1.4rem; font-weight: 700; color: #63b3ed; }
+        nav a { color: #a0aec0; text-decoration: none; margin-left: 20px; font-size: 0.9rem; transition: color 0.2s; }
+        nav a:hover { color: #63b3ed; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        h2 { font-size: 1.5rem; margin-bottom: 24px; color: #63b3ed; }
+        .doc-card { background: #1a1f2e; border: 1px solid #2d3748; border-radius: 12px; margin-bottom: 20px; overflow: hidden; }
+        .doc-header { padding: 16px 24px; background: #16213e; border-bottom: 1px solid #2d3748; display: flex; align-items: center; gap: 12px; }
+        .doc-badge { background: rgba(99,179,237,0.15); border: 1px solid rgba(99,179,237,0.3); color: #63b3ed; padding: 4px 14px; border-radius: 20px; font-size: 0.9rem; font-weight: 700; }
+        .doc-body { padding: 20px 24px; color: #a0aec0; font-size: 0.9rem; line-height: 1.8; white-space: pre-wrap; }
+        .back-btn { display: inline-block; margin-bottom: 24px; color: #63b3ed; text-decoration: none; font-size: 0.9rem; }
+        .back-btn:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>🔍 IR Search Engine</h1>
+    <nav>
+        <a href="/">Search</a>
+        <a href="/documents">Documents</a>
+    </nav>
+</header>
+<div class="container">
+    <a class="back-btn" href="/">← Back to Search</a>
+    <h2>Document Collection</h2>
+    {% for doc_id, doc_text in documents %}
+    <div class="doc-card">
+        <div class="doc-header">
+            <span class="doc-badge">{{ doc_id }}</span>
+            <span style="color:#718096; font-size:0.82rem;">{{ doc_id|lower }}.txt</span>
+        </div>
+        <div class="doc-body">{{ doc_text }}</div>
+    </div>
+    {% endfor %}
+</div>
+</body>
+</html>

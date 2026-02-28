@@ -1,0 +1,5 @@
+Data science is a multidisciplinary field that uses scientific methods algorithms and systems to extract knowledge from structured and unstructured data. It combines expertise from statistics computer science and domain knowledge to solve complex problems. The demand for skilled data scientists has grown rapidly as organizations recognize the value of data driven strategies.
+
+A tree data structure represents hierarchical relationships between elements where each node can have child nodes branching downward. Trees are widely used in file systems compilers and network routing because they allow efficient search insertion and deletion operations. Understanding tree traversal algorithms such as depth first and breadth first search is essential for any data science practitioner.
+
+This book is written specifically for a newbie who wants to explore the world of data science from scratch. It covers all fundamental topics in a clear and easy to understand manner with plenty of real-world examples. By the end readers will have a solid foundation in data structures algorithms and the basics of machine learning.
